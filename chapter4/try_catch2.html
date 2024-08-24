@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>0~9 숫자 입력 체크</h3>
+    <input id="input1" type="text"><span id="show"></span><br>
+    <button onclick="checkInput()">확인</button>
+
+    <script>
+        function checkInput() {
+            let input_elem = document.getElementById("input1");
+            let a = input_elem.value;
+            document.getElementById("show").innerHTML = "";
+
+            try {
+                if (a == "") throw "빈 값";
+                if(isNaN(a)) throw "숫자가 아님";
+                a = Number(a);
+                if(a < 0 || a > 9) throw "0~9 가 아님";
+            }
+            catch (err) {
+                document.getElementById("show").innerHTML = "오류: " + err;
+            }
+        }
+    </script>
+</body>
+</html>

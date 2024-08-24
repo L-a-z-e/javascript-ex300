@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    function sumScores(...scores) {
+        let sum = 0;
+        for (let score of scores) {
+            sum += score;
+        }
+        return sum;
+    }
+    let sum = sumScores(10, 20, 30, 40, 100);
+    document.getElementById("show").innerHTML = sum;
+</script>
+</body>
+</html>

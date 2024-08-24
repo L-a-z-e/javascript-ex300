@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        try {
+            alerttt("안녕하세요");
+            document.getElementById("test!");
+        }
+        catch (err) {
+            document.getElementById("show").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>

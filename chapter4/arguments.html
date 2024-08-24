@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        function maxScores() {
+            let max = -Infinity; // Infinity는 global scope에서 사용할 수 있음 (양의 무한대) 따라서 -Infinity는 음의 무한대
+            for (let i = 0; i < arguments.length; i++) {
+                if(arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+
+        let max_score = maxScores(20, 30, 10, 70, 55);
+        document.getElementById("show").innerHTML = max_score;
+    </script>
+</body>
+</html>
