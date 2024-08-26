@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        class Member {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            getAge() {
+                return "나이 : " + this.age;
+            }
+        }
+
+        const member1 = new Member("seon", 30);
+
+        let text = "";
+        text += member1.name + "<br>";
+        text += member1.age;
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

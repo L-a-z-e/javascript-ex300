@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        function Member(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
+
+        Member.prototype.company = "현대";
+        Member.prototype.getId = function() {
+            return "아이디 : " + this.id;
+        }
+
+        const member1 = new Member("laze", "seon", 30);
+
+        let text = "";
+        text += member1.company + "<br>";
+        text += member1.getId();
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

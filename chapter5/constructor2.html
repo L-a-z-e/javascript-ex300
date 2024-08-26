@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        function Member(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+            this.getName = function() {
+                return "이름 : " + this.name;
+            }
+        };
+
+        const member1 = new Member("laze", "seon", 30);
+        let text = "";
+        text += member1.id + "<br>";
+        text += member1.getName();
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

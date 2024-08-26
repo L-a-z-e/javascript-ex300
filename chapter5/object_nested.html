@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        const obj1 = {
+            id: "laze",
+            name: "seon",
+            hobby: {
+                hobby1: "게임",
+                hobby2: "농구",
+                hobby3: "기타"
+            }
+        };
+
+        let text = "";
+        text += obj1.hobby.hobby1 + "<br>";
+        text += obj1.hobby.hobby2 + "<br>";
+        text += obj1.hobby.hobby3;
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

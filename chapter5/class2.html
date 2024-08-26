@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        class Member {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            getName() {
+                return "이름 : " + this.name;
+            }
+        }
+
+        class Student extends Member {
+            constructor(name, age, school) {
+                super(name, age);
+                this.school = school;
+            }
+            intro() {
+                return this.getName() + " " + this.school + "학생";
+            }
+        }
+
+        const student1 = new Student("seon", 30, "대학교");
+        document.getElementById("show").innerHTML  = student1.intro();
+    </script>
+</body>
+</html>

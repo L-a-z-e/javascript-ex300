@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        function Member(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        };
+
+        const member1 = new Member("laze1", "seon1", 31);
+        const member2 = new Member("laze2", "seon2", 32);
+        const member3 = new Member("laze3", "seon3", 33);
+
+        let text = "";
+        text += member1.name + "<br>";
+        text += member2.name + "<br>";
+        text += member3.name;
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>
