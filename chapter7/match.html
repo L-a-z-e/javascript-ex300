@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = "I am A student. I am from Korea.";
+    let arr = str1.match(/a/gi);
+
+    let text = "";
+    for (let i = 0; i <= arr.length - 1; i++) {
+        text += arr[i] + "<br>";
+    }
+
+    document.write(text);
+</script>
+</body>
+</html>
