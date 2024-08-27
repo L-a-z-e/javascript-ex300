@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let x = 123.348765;
+
+        let text = "";
+        text += x.toPrecision() + "<br>";
+        text += x.toPrecision(3) + "<br>";
+        text += x.toPrecision(4) + "<br>";
+        text += x.toPrecision(5) + "<br>";
+        text += x.toPrecision(6) + "<br>";
+        text += 123.345.toPrecision(2);
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

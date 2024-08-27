@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let a = "10";
+        let b = "10.123";
+        let c = " 10";
+        let d = "apple";
+
+        let text = "";
+        text += Number(a) + "<br>";
+        text += Number(b) + "<br>";
+        text += Number(c) + "<br>";
+        text += Number(d);
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

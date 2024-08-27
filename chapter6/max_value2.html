@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let factorial = 1;
+        for (let i = 1; i <= 10000; i++) {
+            factorial *= i;
+
+            if (factorial > Number.MAX_VALUE) {
+                document.write("계산 범위 초과");
+                break;
+            }
+            else {
+                document.write(factorial + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

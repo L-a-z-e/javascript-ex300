@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let a = 10;
+        let b = "lion";
+        let c = "2";
+
+        let result1 = a / b;
+        let result2 = a / c;
+
+        let text = "";
+        text += result1 + "<br>";
+        text += result2 + "<br>";
+        text += isNaN(result1) + "<br>";
+        text += isNaN(result2);
+
+        document.getElementById("show").innerHTML = text;
+
+    </script>
+</body>
+</html>

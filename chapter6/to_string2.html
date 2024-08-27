@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let x = 10;
+        let y = x.toString();
+
+        let text = "";
+        text += x + "<br>";
+        text += y + "<br>";
+        text += typeof x + "<br>";
+        text += typeof y + "<br>";
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>

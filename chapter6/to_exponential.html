@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let x = 1235.36764508;
+
+        let text = "";
+        text += x.toExponential() + "<br>";
+        text += x.toExponential(2) + "<br>";
+        text += x.toExponential(3) + "<br>";
+        text += x.toExponential(4) + "<br>";
+        text += x.toExponential(6) + "<br>";
+        text += 123.45678.toExponential(2) + "<br>";
+
+        document.getElementById("show").innerHTML = text;
+    </script>
+</body>
+</html>
