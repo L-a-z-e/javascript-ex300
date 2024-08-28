@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = "Nice to meet you!";
+
+    let pattern = /[a-f]/g;
+    let result1 = pattern.test(str1);
+    let result2 = /[0-9]/g.test(str1);
+
+    let text = "";
+    text += result1 + "<br>";
+    text += result2;
+
+    document.write(text);
+</script>
+</body>
+</html>

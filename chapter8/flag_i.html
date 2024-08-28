@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="show"></p>
+    <script>
+        let str1 = "I go to School. My school is a good SCHOOL";
+        let pattern = /school/ig;
+        let result = str1.replace(pattern, "office");
+
+        document.getElementById("show").innerHTML = result;
+    </script>
+</body>
+</html>

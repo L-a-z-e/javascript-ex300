@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = '1 23 456 789 10 11';
+
+    let pattern1 = /[^13579]/g;
+    let pattern2 = /[^0-6]/g;
+    let result1 = str1.match(pattern1);
+    let result2 = str1.match(pattern2);
+
+    let text = "";
+    text += result1 + "<br>";
+    text += result2;
+
+    document.write(text);
+</script>
+</body>
+</html>
