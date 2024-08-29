@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const fruits = new Map([
+        ["사과", 10],
+        ["오렌지", 20],
+        ["수박", 30]
+    ]);
+
+    fruits.delete("사과");
+
+    let text = "";
+    fruits.forEach(function(item, index) {
+        text += index + " : " + item + "<br>";
+    })
+
+    document.write(text);
+</script>
+</body>
+</html>
