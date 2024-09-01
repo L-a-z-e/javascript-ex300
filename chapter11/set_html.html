@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>항목1</li>
+    <li>항목2</li>
+    <li>항목3</li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    const x = document.querySelectorAll("li");
+    x[2].innerHTML = "<span style='color:red'>text1</span>"
+    x[3].innerHTML = "text2";
+    x[4].innerText = "text3";
+</script>
+</body>
+</html>

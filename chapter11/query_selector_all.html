@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="title">Title</h1>
+<p>paragraph 1</p>
+<ul>
+    <li>item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+</ul>
+
+<script>
+    const x = document.querySelectorAll("h1#title");
+    const y = document.querySelectorAll("p");
+    const z = document.querySelectorAll("li.item");
+
+    x[0].style.backgroundColor = "red";
+    y[0].style.backgroundColor = "green";
+    z[1].style.backgroundColor = "blue";
+</script>
+</body>
+</html>

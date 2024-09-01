@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <p id="p1">paragraph1</p>
+    <p id="p2">paragraph2</p>
+    <p id="p3">paragraph3</p>
+</div>
+
+<script>
+    const elem = document.createElement("p");
+    const text_node = document.createTextNode("new paragraph");
+    elem.appendChild(text_node);
+
+    const p1 = document.getElementById("p1");
+    document.getElementById("box").replaceChild(elem, p1);
+</script>
+</body>
+</html>

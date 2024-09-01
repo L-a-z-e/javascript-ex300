@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="parent">
+        <p>hi1</p>
+        <p>hi2</p>
+        <p>hi3</p>
+        <p>hi4</p>
+        <p>hi5</p>
+    </div>
+    <p id="show"></p>
+    <script>
+        const x = document.getElementById("parent");
+        const y = x.getElementsByTagName("p");
+
+        y[2].style.color = "red";
+    </script>
+</body>
+</html>

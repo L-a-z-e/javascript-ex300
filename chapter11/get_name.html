@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form1">
+    이름: <input type="text" name="name"><br>
+    <button onclick="get_name()">버튼</button>
+
+    <script>
+        function get_name() {
+            let text = document.form1.name.value; // <form> 요소 안의 <name> 객체 <input> 요소, value 속성은 input 요소 안에 입력된 텍스트
+            alert(text);
+        }
+    </script>
+</form>
+</body>
+</html>

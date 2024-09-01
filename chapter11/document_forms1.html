@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="form_id1">
+    이름: <input type="text" name="name"><br>
+    <button>확인</button>
+</form>
+<form id="form_id2">
+    이메일: <input type="text" name="email"><br>
+    <button>확인</button>
+</form>
+<p id="show"></p>
+<script>
+    const x = document.forms[0].id;
+    document.getElementById("show").innerHTML = x;
+    console.log(document.forms);
+</script>
+</body>
+</html>

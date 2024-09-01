@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="parrent">
+        <p>hi1</p>
+        <p>hi1</p>
+        <p class="a">hi3</p>
+        <p class="a">hi4</p>
+        <p class="b">hi5</p>
+    </div>
+    <p id="show"></p>
+
+    <script>
+        const x = document.getElementById("parrent");
+        const y = x.getElementsByClassName("a");
+        for (let i = 0; i < y.length; i++) {
+            y[i].style.color = "blue";
+        }
+    </script>
+</body>
+</html>

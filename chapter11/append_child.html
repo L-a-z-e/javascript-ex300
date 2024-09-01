@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+</div>
+
+<script>
+    const elem = document.createElement("p");
+    const text_node = document.createTextNode("new paragraph");
+
+    elem.appendChild(text_node);
+    document.getElementById("box").appendChild(elem);
+</script>
+</body>
+</html>

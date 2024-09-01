@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="image" src="/img/img1.jpg" alt="imgfile"><br>
+<button type="button" onclick="changeImage()">이미지 변경</button>
+<button type="button" onclick="changeSize()">크기 변경</button>
+
+<script>
+    function changeImage() {
+        document.getElementById("image").src = "/img/img2.jpg";
+    }
+
+    function changeSize() {
+        document.getElementById("image").width = "50";
+        document.getElementById("image").height = "50";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="p1">hi</p>
+    <button onclick="changeColor('red');">RED</button>
+    <button onclick="changeColor('blue');">BLUE</button>
+
+    <script>
+        function changeColor(color) {
+            const elem = document.getElementById("p1");
+            elem.style.color = color;
+        }
+    </script>
+</body>
+</html>
