@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="showMessage1()">click</button>
+<button ondblclick="showMessage2()">dblclick</button>
+<p id="show"></p>
+<script>
+    function showMessage1() {
+        document.getElementById("show").innerHTML = "click";
+    }
+
+    function showMessage2() {
+        document.getElementById("show").innerHTML = "dblclick";
+    }
+</script>
+</body>
+</html>

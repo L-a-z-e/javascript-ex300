@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    div#box1 { border: solid 3px pink; width: 500px;}
+    div#box2 { border: solid 3px skyblue; width: 500px;}
+    p { border: solid 1px green;}
+</style>
+<div id="box1" onmouseleave="increaseX()">
+    <p>paragraph1</p>
+    <span id="show1"></span>
+</div>
+<div id="box2" onmouseout="increaseY()">
+    <p>paragraph2</p>
+    <span id="show2"></span>
+</div>
+<script>
+    let x = 0; y = 0;
+    function increaseX() {
+        x += 1;
+        document.getElementById("show1").innerHTML = x;
+    }
+
+    function increaseY() {
+        y += 1;
+        document.getElementById("show2").innerHTML = y;
+    }
+</script>
+</body>
+</html>

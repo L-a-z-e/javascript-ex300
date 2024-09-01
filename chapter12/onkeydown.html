@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="input key">
+<p id="show"></p>
+<script>
+    const input = document.querySelector("input");
+    let text = "";
+
+    input.addEventListener("keydown", showKey);
+    function showKey(e) {
+        text += e.key;
+        document.getElementById("show").innerHTML = text;
+    }
+</script>
+</body>
+</html>

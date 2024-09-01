@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    div, p, img { margin: 10px; border: 1px solid green;}
+</style>
+<div onclick="func(event)">
+    <p>
+        <img src="/img/img1.jpg">
+    </p>
+</div>
+<span id="show"></span>
+<script>
+    function func(event) {
+        let text = event.target.tagName;
+        document.getElementById("show").innerHTML = text;
+    }
+</script>
+</body>
+</html>
