@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="execFunc = setTimeout(func1, 3000)">3초후 실행</button>
+<button onclick="clearTimeout(execFunc)">실행중지</button>
+<script>
+    function func1() {
+        alert('hi');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let text = "";
+    text += "- appCodeName Property : " + navigator.appCodeName + "<br>";
+    text += "- appName Property : " + navigator.appName + "<br>";
+    text += "- appVersion Property : " + navigator.appVersion + "<br>";
+    text += "- language Property : " + navigator.language + "<br>";
+    text += "- platform Property : " + navigator.platform + "<br>";
+    text += "- cookieEnabled Property : " + navigator.cookieEnabled + "<br>";
+    text += "- onLine Property : " + navigator.onLine + "<br>";
+    text += "- userAgent Property : " + navigator.userAgent + "<br>";
+    document.getElementById('show').innerHTML = text;
+</script>
+</body>
+</html>
