@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text = "";
+    for(let mile=1, km = 0; mile < 100; mile = mile + 2) {
+        km = (mile * 1.609344).toFixed(2);
+        text += mile + " " + km + "<br>";
+    }
+    document.write(text);
+</script>
+</body>
+</html>

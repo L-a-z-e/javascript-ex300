@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let text = "";
+    let mile = 1;
+    let km = 0;
+    text += "<table border='1'>\n" +
+        "<tr><th>마일</th><th>킬로미터</th></tr>\n";
+
+    while(mile < 100) {
+        km = (mile * 1.609344).toFixed(2);
+        text += "<tr><td>" + mile + "</td><td>" + km + "</td></tr>\n";
+        mile += 2;
+    }
+    text += "</table>"
+    console.log(text);
+    document.getElementById("show").innerHTML = text;
+</script>
+</body>
+</html>

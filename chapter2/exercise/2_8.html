@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+    let monthlyInterest = 0;
+    let fixedDepositAmount = 12000000;
+    let interestRate = 0.04;
+
+    monthlyInterest = fixedDepositAmount * interestRate / 12;
+
+    document.getElementById("show").innerHTML = "월 이자 : " + monthlyInterest;
+</script>
+</body>
+</html>

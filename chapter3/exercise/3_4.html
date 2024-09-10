@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let text = ""
+
+    for(let i = 100, count = 0; i <= 300; i++) {
+        if(i % 3 == 0){
+            text += i + " ";
+            count++;
+            if(count % 5 == 0) {
+                text += "<br>";
+            }
+        }
+    }
+
+    document.write(text);
+</script>
+</body>
+</html>
